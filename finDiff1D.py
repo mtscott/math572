@@ -21,12 +21,11 @@ plt.plot(xx,uexx,'b')
 plt.show()
 err = np.linalg.norm(uex-u,np.inf)
 print(err)
-"""
+
 allerr=np.array([[10, 0.008265416966228845],[20, 0.002058706764534346], [40,
 0.0005142004781495402],[80, 0.00012852038354038697],
 [160, 3.212823780796015e-05]])
 print(allerr[:,1])
 print(allerr.shape)
 for i in range(allerr.shape[0]-1):
-print(allerr[i,1]/allerr[i+1,1])
-"""
+    print(allerr[i,1]/allerr[i+1,1])
