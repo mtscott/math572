@@ -75,8 +75,8 @@ uu = u_ex(x, mu, beta, gamma)
 Pe = np.abs(beta)*h/(2*mu)
 print(Pe)
 
-u = solver_centred(x,f,mu*(1+Pe),beta,uL,uR,h,N)
-#u = solver_upwind(x,f,mu,beta,uL,uR,h,N)
+#u = solver_centred(x,f,mu*(1+Pe),beta,uL,uR,h,N)
+u = solver_upwind(x,f,mu,beta,uL,uR,h,N)
 
 """
 #
